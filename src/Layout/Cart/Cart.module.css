@@ -1,0 +1,46 @@
+.cartlist {
+  background-color: white;
+  width: 50%;
+  max-width: 530px;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.amountDisp {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.itemDetails {
+  font-size: small;
+  color: black;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+
+.buttonGroup > button {
+  padding: 10px 25px;
+  border-radius: 30px;
+}
+
+.close {
+  background-color: white;
+  border: solid #76200b 1px;
+  color: #76200b;
+  font-weight: bold;
+}
+
+.order {
+  background-color: #76200b;
+  color: white;
+  border: none;
+}

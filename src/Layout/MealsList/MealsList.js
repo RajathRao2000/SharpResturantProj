@@ -1,8 +1,12 @@
+import { createPortal } from "react-dom";
+
 import mealsList from "./dummy-meals";
 import MealItem from "./MealItem";
 import classes from "./MealsList.module.css";
-const MealsList = () => {
+import Cart from "../Cart/Cart";
 
+
+const MealsList = () => {
   return (
     <div className={classes.MealsListCard}>
       {mealsList.map((item) => {
@@ -16,6 +20,7 @@ const MealsList = () => {
           />
         );
       })}
+      {createPortal(<Cart />, document.getElementById("cart"))}
     </div>
   );
 };

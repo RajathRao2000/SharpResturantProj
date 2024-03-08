@@ -1,5 +1,5 @@
+import Cart from "../Cart/Cart";
 import classes from "./MealItem.module.css";
-
 const MealItem = (props) => {
   console.log(props)
   return (
