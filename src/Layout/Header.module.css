@@ -9,8 +9,7 @@
 }
 
 .counter{
-    margin-left: 10px;
-    padding: 5px;
+    padding: 5px 10px;
     background-color: #a53120;
     border-radius: 10px;
 }
@@ -19,9 +18,13 @@
     background-color: #3f1404;
     color: white;
     padding: 20px 40px;
-    border-radius: 50px;
+    border-radius: 30px;
     border: none;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .heading{
