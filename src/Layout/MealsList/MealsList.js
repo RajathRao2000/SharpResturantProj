@@ -5,7 +5,6 @@ import MealItem from "./MealItem";
 import classes from "./MealsList.module.css";
 import Cart from "../Cart/Cart";
 
-
 const MealsList = () => {
   return (
     <div className={classes.MealsListCard}>
@@ -20,7 +19,6 @@ const MealsList = () => {
           />
         );
       })}
-      {createPortal(<Cart />, document.getElementById("cart"))}
     </div>
   );
 };
