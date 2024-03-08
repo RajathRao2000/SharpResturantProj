@@ -1,0 +1,34 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #762212;
+    color: white;
+    align-items: center;
+    padding: 10px
+}
+
+.counter{
+    margin-left: 10px;
+    padding: 5px;
+    background-color: #a53120;
+    border-radius: 10px;
+}
+
+.cart-btn{
+    background-color: #3f1404;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+}
+
+.heading{
+    font-size: 30px;
+}
+
+.cart{
+    height: 15px;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(125deg) brightness(114%) contrast(101%);
+}
