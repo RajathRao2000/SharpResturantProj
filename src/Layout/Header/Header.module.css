@@ -6,6 +6,8 @@
     color: white;
     align-items: center;
     padding: 10px;
+    position: sticky;
+    width: 100vw;
 }
 
 .counter{
@@ -25,6 +27,7 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 }
 
 .heading{
@@ -34,4 +37,9 @@
 .cart{
     height: 15px;
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(125deg) brightness(114%) contrast(101%);
+}
+
+.image{
+    position: absolute;
+    z-index: -1;
 }
