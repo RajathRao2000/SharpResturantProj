@@ -3,9 +3,11 @@ import cart from "./cartIcon.svg";
 import img from "./meals.jpg"
 import Cart from "../Cart/Cart";
 import { createPortal } from "react-dom";
-import { useState } from "react";
+import { useState,useContext } from "react";
+import CartContext from "../../store/cart-context";
 const Header = () => {
   const [cartOpen,setCartOpen] = useState(false)
+  const cartContext = useContext(CartContext)
 
   const openCartList=()=>{
     setCartOpen(true)
@@ -23,10 +25,10 @@ const Header = () => {
         <button className={classes["cart-btn"]} onClick={openCartList}>
           <img src={cart} className={classes.cart} alt="cart image" />
           <span>Your Cart</span>
-          <span className={classes.counter}>0</span>
+          <span className={classes.counter}>{Object.keys(cartContext.items).length}</span>
         </button>
       </span>
-      {cartOpen?createPortal(<Cart closeCart={closeCartList} setCart/>, document.getElementById("cart")): null}
+      {cartOpen?createPortal(<Cart cartDetails={cartContext} closeCart={closeCartList} setCart/>, document.getElementById("cart")): null}
 
     </header>
     <img className={classes.image} src={img} ></img>

@@ -1,0 +1,33 @@
+.cartItem{
+    border-bottom: 2px solid #76200b;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: bold;
+}
+.itemPriceAndAmount{
+    width: 100px;
+    /* border: solid 1px ; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.itemPriceAndAmount>.itemPrice{
+    color:#76200b;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.itemPriceAndAmount>.itemAmount{
+    /* border: solid 1px; */
+    padding: 3px;
+    font-weight: bold;
+}
