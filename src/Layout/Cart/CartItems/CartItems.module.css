@@ -1,33 +1,56 @@
-.cartItem{
-    border-bottom: 2px solid #76200b;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.cartItem {
+  border-bottom: 2px solid #76200b;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.title{
-    font-size: 20px;
-    font-weight: bold;
+.title {
+  font-size: 20px;
+  font-weight: bold;
 }
-.itemPriceAndAmount{
-    width: 100px;
-    /* border: solid 1px ; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.itemPriceAndAmount {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itemPriceAndAmount > .itemPrice {
+  color: #76200b;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.itemPriceAndAmount > .itemAmount {
+  padding: 3px;
+  font-weight: bold;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+}
+
+.buttonGroup>button{
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.substract {
+  background-color: white;
+  border: solid #76200b 1px;
+  color: #76200b;
+  font-weight: bold;
 
 }
 
-.itemPriceAndAmount>.itemPrice{
-    color:#76200b;
-    font-weight: bold;
-    font-size: 15px;
-}
+.add {
+  background-color: #76200b;
+  color: white;
+  border: none;
 
-.itemPriceAndAmount>.itemAmount{
-    /* border: solid 1px; */
-    padding: 3px;
-    font-weight: bold;
 }
